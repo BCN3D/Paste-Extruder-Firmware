@@ -751,8 +751,8 @@ static void lcd_implementation_quick_feedback()
 
 #if BEEPER > -1
     SET_OUTPUT(BEEPER);
-    for(int8_t i=0;i<10;i++)
-    {
+    //for(int8_t i=0;i<10;i++)
+    //{
 		//Rapduch
 		tone(BEEPER, 1200, 50);
 		
@@ -760,7 +760,7 @@ static void lcd_implementation_quick_feedback()
 		//delay(3);
 		//WRITE(BEEPER,LOW);
 		//delay(3);
-    }
+    //}
 #endif
 }
 #endif//ULTRA_LCD_IMPLEMENTATION_DOGM_H
